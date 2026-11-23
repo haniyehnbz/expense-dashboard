@@ -1,6 +1,6 @@
 function TransactionTable(props) {
   return (
-    <div>
+    <div className="container">
       <h2>تراکنش‌ها</h2>
 
       <table dir="rtl">
@@ -20,17 +20,21 @@ function TransactionTable(props) {
                 {item.date.replace(/\d/g, (digit) => "۰۱۲۳۴۵۶۷۸۹"[digit])}
               </td>
 
-              <td>
-                {item.type === "income"
-                  ? item.amount.toLocaleString("fa-IR")
-                  : "-"}
-              </td>
+              {item.type === "income" ? (
+                <td className="income">
+                  {item.amount.toLocaleString("fa-IR")}+
+                </td>
+              ) : (
+                <td></td>
+              )}
 
-              <td>
-                {item.type === "expense"
-                  ? item.amount.toLocaleString("fa-IR")
-                  : "-"}
-              </td>
+              {item.type === "expense" ? (
+                <td className="expense">
+                  {item.amount.toLocaleString("fa-IR")}−
+                </td>
+              ) : (
+                <td></td>
+              )}
 
               <td>{item.description}</td>
             </tr>
