@@ -1,16 +1,45 @@
-# React + Vite
+# Expense Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+یک داشبورد ساده برای نمایش تراکنش‌های مالی که با React ساخته شده است.
+در این پروژه، تعدادی تراکنش نمونه شامل درآمد و هزینه نمایش داده می‌شوند. اطلاعات هر تراکنش شامل تاریخ، مبلغ و شرح آن است.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- نمایش تراکنش‌ها در قالب جدول
+- تفکیک درآمد و هزینه با رنگ‌های متفاوت
+- نمایش اعداد و تاریخ‌ها به فارسی
+- نمایش مبالغ با جداکننده هزارگان
+- طراحی ریسپانسیو برای موبایل و دسکتاپ
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- CSS
+- Vite
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ابتدا وابستگی‌های پروژه را نصب کنید:
+
+```bash
+npm install
+```
+
+برای اجرای پروژه در حالت توسعه:
+
+```bash
+npm run dev
+```
+
+## Project Structure
+
+```text
+src/
+├── components/
+│   └── TransactionTable.jsx
+├── App.jsx
+├── App.css
+├── index.css
+└── main.jsx
+```
