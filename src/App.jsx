@@ -95,10 +95,6 @@ function App() {
   },
  ];
 
- return (
-  <div>
-   <TransactionTable transactions={transactions} />
-  </div>
- );
+ return <TransactionTable transactions={transactions} />;
 }
 export default App;

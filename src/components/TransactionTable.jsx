@@ -29,7 +29,7 @@ function TransactionTable(props) {
 
        {item.type === 'expense' ? (
         <td className="expense">
-         {item.amount.toLocaleString('fa-IR')}−{' '}
+         {item.amount.toLocaleString('fa-IR')}−
          <span className="currency"> تومان</span>
         </td>
        ) : (

@@ -4,13 +4,9 @@ table {
 }
 
 .container {
- min-width: 100%;
- height: auto;
- border-collapse: collapse;
  background-color: var(--white-color);
  border-radius: var(--border-radius);
  overflow: hidden;
- margin: 0 auto;
  padding: 35px 30px 35px 30px;
  margin: 30px 0 30px 0;
  font-weight: 500;
@@ -38,4 +34,44 @@ th {
 .description {
  color: var(--text);
  font-weight: 400;
+}
+.currency {
+ display: none;
+}
+@media (max-width: 768px) {
+ #root {
+  max-width: 90%;
+ }
+ thead {
+  display: none;
+ }
+ .currency {
+  display: inline;
+ }
+ tbody tr {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #fafafb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 8px;
+ }
+
+ tbody td {
+  border: none;
+  padding: 4px;
+ }
+
+ .income,
+ .expense {
+  grid-column: 2;
+  grid-row: 1;
+  text-align: left;
+ }
+
+ .description {
+  grid-column: 1 / -1;
+  grid-row: 2;
+ }
 }
