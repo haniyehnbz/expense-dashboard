@@ -36,7 +36,7 @@ function TransactionTable(props) {
                 <td></td>
               )}
 
-              <td>{item.description}</td>
+              <td className="description">{item.description}</td>
             </tr>
           ))}
         </tbody>
