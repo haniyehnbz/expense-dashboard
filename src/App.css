@@ -1,41 +1,41 @@
 table {
-  width: 100%;
-  margin-top: 20px;
+ width: 100%;
+ margin-top: 20px;
 }
 
 .container {
-  min-width: 100%;
-  height: auto;
-  border-collapse: collapse;
-  background-color: var(--white-color);
-  border-radius: var(--border-radius);
-  overflow: hidden;
-  margin: 0 auto;
-  padding: 35px 30px 35px 30px;
-  margin: 30px 0 30px 0;
-  font-weight: 500;
+ min-width: 100%;
+ height: auto;
+ border-collapse: collapse;
+ background-color: var(--white-color);
+ border-radius: var(--border-radius);
+ overflow: hidden;
+ margin: 0 auto;
+ padding: 35px 30px 35px 30px;
+ margin: 30px 0 30px 0;
+ font-weight: 500;
 }
 
 th,
 td {
-  padding: var(--table-padding);
-  text-align: right;
+ padding: var(--table-padding);
+ text-align: right;
 }
 
 th {
-  color: var(--text-t);
-  border-bottom: 1.5px solid var(--primary-lblue);
+ color: var(--text-t);
+ border-bottom: 1.5px solid var(--primary-lblue);
 }
 
 .income {
-  color: var(--system-green);
+ color: var(--system-green);
 }
 
 .expense {
-  color: var(--system-red);
+ color: var(--system-red);
 }
 
 .description {
-  color: var(--text);
-  font-weight: 400;
+ color: var(--text);
+ font-weight: 400;
 }
